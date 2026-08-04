@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
+  --background: #00000061;
   --foreground: #f7f9fc;
   --surface: #07090c;
   --surface-soft: #0d1117;
@@ -14,7 +14,7 @@
   --blue: #1677ff;
   --blue-soft: #0d5fc7;
   --blue-dark: #031833;
-  --blue-glow: rgba(22, 119, 255, 0.2);
+  --blue-glow: rgb(22, 119, 255);
   --linux-yellow: #f4c21d;
 }
 

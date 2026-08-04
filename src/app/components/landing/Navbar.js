@@ -24,7 +24,7 @@ export default function Navbar() {
             width={brandLogo.width}
             height={brandLogo.height}
             priority
-            className="h-9 w-auto [filter:drop-shadow(0_0_18px_rgba(22,119,255,0.32))] sm:h-10"
+            className="h-30 w-40 [filter:drop-shadow(0_0_18px_rgba(22,119,255,0.32))] sm:h-30"
           />
         </a>
 

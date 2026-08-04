@@ -7,18 +7,18 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-[#1677ff]/15 bg-black/35">
-      <Reveal className="mx-auto max-w-[1100px] px-5 py-10 text-center sm:px-6" variant="fade">
+      <Reveal className="mx-auto max-w-[1100px] px-5 py-3 text-center sm:px-6" variant="fade">
         <Image
           src={brandLogo.src}
           alt={brandLogo.alt}
           width={brandLogo.width}
           height={brandLogo.height}
-          className="mx-auto h-11 w-auto [filter:drop-shadow(0_0_22px_rgba(22,119,255,0.28))]"
+          className="mx-auto h-55 w-70 [filter:drop-shadow(0_0_22px_rgba(22,119,255,0.28))]"
         />
-        <p className="mt-5 text-sm font-bold uppercase tracking-[0.18em] text-[#f7f9fc]">
+        <p className="mt-1 text-sm font-bold uppercase tracking-[0.18em] text-[#f7f9fc]">
           {footerContent.line}
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-5">
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-5">
           {socialLinks.map((link) => (
             <a
               key={link.label}
@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-7 text-sm text-[#ffffff] ">
+        <p className="mt-3 text-sm text-[#ffffff] ">
           © {year} {brandName}. Todos los derechos reservados.
         </p>
       </Reveal>

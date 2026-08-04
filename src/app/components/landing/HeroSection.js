@@ -15,16 +15,16 @@ export default function HeroSection() {
       <div className="circuit-corner circuit-corner-left pointer-events-none absolute left-0 top-[68px] hidden h-44 w-72 opacity-80 sm:block" aria-hidden="true" />
       <div className="circuit-corner circuit-corner-right pointer-events-none absolute right-0 bottom-0 h-48 w-80 opacity-80" aria-hidden="true" />
 
-      <div className="relative mx-auto flex min-h-[652px] max-w-[1100px] flex-col justify-center px-5 pb-24 pt-28 sm:px-6">
-        <div className="max-w-[760px]">
-          <Reveal delay="0ms" speed="fast" className="mb-8">
+      <div className="relative mx-auto flex min-h-[662px] max-w-[1900px] flex-col justify-center px-5 pb-3 pt-1 sm:px-9">
+        <div className="max-w-[1200px] ">
+          <Reveal delay="0ms" speed="fast" className="mb-1">
             <Image
               src={brandLogo.src}
               alt={brandLogo.alt}
               width={brandLogo.width}
               height={brandLogo.height}
               priority
-              className="h-14 w-auto [filter:drop-shadow(0_0_26px_rgba(22,119,255,0.34))] sm:h-16"
+              className="h-73 w-120 [filter:drop-shadow(0_0_365px_rgba(22,119,255,0.34))] sm:h-73"
             />
           </Reveal>
           <Reveal as="p" delay="80ms" speed="fast" className="mb-6 text-[11px] font-bold uppercase tracking-[0.28em] text-[#2d8cff]">

@@ -4,16 +4,16 @@ export const brandName = "Stem Tech";
 export const brandDescriptor = "Software, automatización y soluciones técnicas";
 
 export const brandLogo = {
-  src: "/stem-tech-logo-official.png",
-  width: 1276,
-  height: 275,
+  src: "/stemtechoficial-.png",
+  width: 1376,
+  height: 375,
   alt: "Logo Stem Tech",
 };
 
 export const brandMascot = {
   src: "/linux-penguin-tux.png",
-  width: 161,
-  height: 179,
+  width: 191,
+  height: 199,
   alt: "Pingüino de Linux de Stem Tech",
 };
 
