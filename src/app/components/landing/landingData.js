@@ -1,13 +1,20 @@
 // Cuando la marca cambie, modificar solo este valor.
 export const brandName = "Stem Tech";
 
-export const brandDescriptor = "Tecnología y software";
+export const brandDescriptor = "Software, automatización y soluciones técnicas";
 
 export const brandLogo = {
   src: "/stem-tech-logo-official.png",
   width: 1276,
   height: 275,
   alt: "Logo Stem Tech",
+};
+
+export const brandMascot = {
+  src: "/linux-penguin-tux.png",
+  width: 161,
+  height: 179,
+  alt: "Pingüino de Linux de Stem Tech",
 };
 
 export const whatsappUrl =
@@ -27,36 +34,61 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  label: "TECNOLOGÍA · SOFTWARE · AUTOMATIZACIÓN",
-  title: "Construyo tecnología para convertir ideas en sistemas reales.",
+  label: "TECNOLOGÍA · FÁBRICA DE SOFTWARE · AUTOMATIZACIÓN",
+  title: "Software, automatización y soluciones técnicas.",
   description:
-    "Software, electrónica y soluciones digitales para crear proyectos útiles, modernos y bien pensados.",
-  primaryCta: "Ver lo que hago",
+    "Desarrollo páginas web, sistemas internos, prototipos electrónicos y soporte tecnológico con una estética técnica, limpia y lista para construir.",
+  primaryCta: "Ver servicios",
   secondaryCta: "Hablemos por WhatsApp",
-  meta: "software · web · automatización · electrónica",
+  meta: "Linux · web · electrónica · automatización",
+  highlights: ["Desarrollo web", "Soporte técnico", "Prototipos"],
 };
 
 export const pillarsSection = {
   label: "Servicios",
-  title: "Dos formas de construir",
+  title: "Servicios Stem Tech",
   description:
-    "Combino pensamiento técnico, software y mundo físico para convertir ideas en herramientas útiles.",
+    "La oferta de la tarjeta llevada a la web: software, hardware y acompañamiento técnico en un solo ecosistema.",
   items: [
     {
       number: "01",
-      title: "Tecnología",
+      title: "Soporte y reparación tecnológica",
       description:
-        "Prototipos, electrónica, automatización, impresión 3D, sensores, dispositivos conectados y soluciones que mezclan hardware con ideas reales.",
-      icon: "circuit",
-      tags: ["Arduino", "ESP8266", "Sensores", "Impresión 3D", "Automatización"],
+        "Diagnóstico, mantenimiento y solución de problemas técnicos para equipos, sistemas e instalaciones.",
+      icon: "wrench",
+      tags: ["Soporte", "Reparación", "Mantenimiento"],
     },
     {
       number: "02",
-      title: "Software",
+      title: "Desarrollo de software y páginas web",
       description:
-        "Aplicaciones web, sistemas internos, interfaces, APIs, bases de datos y herramientas digitales para organizar, automatizar y escalar procesos.",
+        "Aplicaciones web, interfaces, APIs y sistemas internos para organizar, automatizar y escalar procesos.",
+      icon: "code",
+      tags: ["Next.js", "APIs", "Frontend", "Backend"],
+    },
+    {
+      number: "03",
+      title: "Automatización y prototipos",
+      description:
+        "Prototipos funcionales, sensores, microcontroladores y flujos automatizados conectados a necesidades reales.",
+      icon: "robot",
+      tags: ["Arduino", "ESP8266", "Sensores"],
+    },
+    {
+      number: "04",
+      title: "Electrónica e instalaciones",
+      description:
+        "Soluciones técnicas, cableado, pruebas, integración de componentes y puesta a punto de sistemas.",
       icon: "chip",
-      tags: ["Next.js", "JavaScript", "Node.js", "PostgreSQL", "APIs", "Backend", "Frontend", "Authentication"],
+      tags: ["Electrónica", "Instalación", "IoT"],
+    },
+    {
+      number: "05",
+      title: "Innovación y emprendimiento tecnológico",
+      description:
+        "Acompañamiento para convertir ideas en productos, prototipos o plataformas con criterio técnico.",
+      icon: "spark",
+      tags: ["Ideas", "Producto", "MVP"],
     },
   ],
 };

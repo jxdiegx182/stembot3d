@@ -15,7 +15,7 @@ export default function Navbar() {
       >
         <a
           href="#inicio"
-          className="inline-flex h-14 w-[190px] items-center focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black sm:w-[220px]"
+          className="inline-flex h-14 w-[190px] items-center focus:outline-none focus:ring-2 focus:ring-[#2d8cff] focus:ring-offset-4 focus:ring-offset-black sm:w-[220px]"
           aria-label={`${brandName} inicio`}
         >
           <Image
@@ -24,7 +24,7 @@ export default function Navbar() {
             width={brandLogo.width}
             height={brandLogo.height}
             priority
-            className="h-9 w-auto [filter:drop-shadow(0_0_18px_rgba(0,159,227,0.32))] sm:h-10"
+            className="h-9 w-auto [filter:drop-shadow(0_0_18px_rgba(22,119,255,0.32))] sm:h-10"
           />
         </a>
 
@@ -33,7 +33,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#8d969f] transition-colors duration-200 hover:text-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black"
+              className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#aab5c1] transition-colors duration-200 hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff] focus:ring-offset-4 focus:ring-offset-black"
             >
               {link.label}
             </a>
@@ -44,14 +44,14 @@ export default function Navbar() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden rounded-md border border-[#006ea0]/70 bg-[#003c60]/45 px-4 py-2 text-xs font-bold text-[#8fdcff] transition duration-200 hover:-translate-y-px hover:border-[#009fe3] hover:bg-[#003c60]/70 focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black lg:inline-flex"
+          className="hidden rounded-md border border-[#1677ff]/60 bg-[#031833]/70 px-4 py-2 text-xs font-bold text-[#dcecff] transition duration-200 hover:-translate-y-px hover:border-[#58a6ff] hover:bg-[#064ea8]/65 hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff] focus:ring-offset-4 focus:ring-offset-black lg:inline-flex"
         >
           Hablemos
         </a>
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.03] text-[#f2f4f6] transition-colors duration-200 hover:border-[#009fe3]/70 hover:text-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3] focus:ring-offset-4 focus:ring-offset-black lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.03] text-[#f7f9fc] transition-colors duration-200 hover:border-[#1677ff]/70 hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff] focus:ring-offset-4 focus:ring-offset-black lg:hidden"
           aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
@@ -78,7 +78,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="border-b border-white/[0.06] py-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#8d969f] transition-colors hover:text-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3]"
+                className="border-b border-white/[0.06] py-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#aab5c1] transition-colors hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff]"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -88,7 +88,7 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 rounded-md border border-[#006ea0]/70 bg-[#003c60]/55 px-4 py-3 text-center text-xs font-bold text-[#8fdcff] transition-colors hover:border-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3]"
+              className="mt-4 rounded-md border border-[#1677ff]/60 bg-[#031833]/70 px-4 py-3 text-center text-xs font-bold text-[#dcecff] transition-colors hover:border-[#58a6ff] hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff]"
               onClick={() => setIsOpen(false)}
             >
               Hablemos

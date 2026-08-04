@@ -103,6 +103,26 @@ export default function Icon({ name, className = iconClasses }) {
     );
   }
 
+  if (name === "wrench") {
+    return (
+      <svg {...commonProps}>
+        <path d="M14.7 6.3a4.8 4.8 0 0 0 5.1 5.1L10.8 20.4a3 3 0 0 1-4.2-4.2l9-9Z" />
+        <path d="M17.8 3.2l3 3" />
+        <path d="M7.5 16.5l-1 1" />
+      </svg>
+    );
+  }
+
+  if (name === "code") {
+    return (
+      <svg {...commonProps}>
+        <path d="M8 9l-4 3 4 3" />
+        <path d="M16 9l4 3-4 3" />
+        <path d="M14 5l-4 14" />
+      </svg>
+    );
+  }
+
   if (name === "cube") {
     return (
       <svg {...commonProps}>

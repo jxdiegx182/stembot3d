@@ -2,19 +2,20 @@
 
 :root {
   --background: #000000;
-  --foreground: #f2f4f6;
-  --surface: #090b0d;
-  --surface-soft: #0d1013;
-  --surface-card: #101214;
+  --foreground: #f7f9fc;
+  --surface: #07090c;
+  --surface-soft: #0d1117;
+  --surface-card: #11161c;
   --border: rgba(255, 255, 255, 0.1);
   --border-soft: rgba(255, 255, 255, 0.06);
-  --text-primary: #f2f4f6;
-  --text-secondary: #8d969f;
-  --text-muted: #5f6870;
-  --blue: #009fe3;
-  --blue-soft: #006ea0;
-  --blue-dark: #003c60;
-  --blue-glow: rgba(0, 159, 227, 0.18);
+  --text-primary: #f7f9fc;
+  --text-secondary: #aab5c1;
+  --text-muted: #728091;
+  --blue: #1677ff;
+  --blue-soft: #0d5fc7;
+  --blue-dark: #031833;
+  --blue-glow: rgba(22, 119, 255, 0.2);
+  --linux-yellow: #f4c21d;
 }
 
 html {
@@ -38,7 +39,7 @@ body {
 h1,
 h2,
 h3 {
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 ::selection {
@@ -49,12 +50,14 @@ h3 {
 .tech-grid-background {
   background-color: var(--background);
   background-image:
-    radial-gradient(ellipse 96rem 56rem at 80% 0%, rgb(0, 159, 227), transparent 78%),
-    linear-gradient(180deg, #010b11 0%, #08304f 42%, #3f6684 100%),
+    radial-gradient(ellipse 82rem 44rem at 78% 0%, rgba(22, 119, 255, 0.5), transparent 72%),
+    radial-gradient(ellipse 62rem 32rem at 12% 18%, rgba(244, 194, 29, 0.08), transparent 70%),
+    linear-gradient(180deg, #020408 0%, #041224 42%, #050607 100%),
     linear-gradient(var(--border-soft) 1px, transparent 10px),
-    linear-gradient(90deg, var(--border-soft) 1px, transparent 10px);
-  background-size: auto, auto, 96px 96px, 96px 96px;
-  background-repeat: no-repeat, no-repeat, repeat, repeat;
+    linear-gradient(90deg, var(--border-soft) 1px, transparent 10px),
+    radial-gradient(rgba(255, 255, 255, 0.12) 0.55px, transparent 0.55px);
+  background-size: auto, auto, auto, 96px 96px, 96px 96px, 4px 4px;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat, repeat;
   background-position: top center, top center, top center, top center;
 }
 
@@ -70,9 +73,10 @@ h3 {
 
 .hero-tech-background {
   background:
-    radial-gradient(ellipse 90rem 34rem at 50% 20%, rgba(0, 159, 227, 0.2), transparent 72%),
-    radial-gradient(ellipse 104rem 42rem at 50% 0%, rgba(0, 110, 160, 0.32), transparent 74%),
-    linear-gradient(180deg, rgba(0, 22, 36, 0.6) 0%, rgba(0, 9, 16, 0.24) 52%, transparent 100%);
+    radial-gradient(ellipse 72rem 28rem at 72% 30%, rgba(22, 119, 255, 0.25), transparent 72%),
+    radial-gradient(ellipse 42rem 24rem at 82% 62%, rgba(244, 194, 29, 0.08), transparent 72%),
+    radial-gradient(ellipse 104rem 42rem at 50% 0%, rgba(5, 73, 150, 0.34), transparent 74%),
+    linear-gradient(180deg, rgba(0, 12, 26, 0.78) 0%, rgba(0, 8, 16, 0.34) 52%, transparent 100%);
 }
 
 .hero-dot-wave {
@@ -95,6 +99,40 @@ h3 {
 
 .hero-glow {
   background: radial-gradient(circle at 50% 30%, var(--blue-glow), transparent 26rem);
+}
+
+.circuit-corner {
+  background:
+    linear-gradient(135deg, var(--blue) 0 1px, transparent 1px 100%),
+    linear-gradient(90deg, transparent 0 18%, rgba(22, 119, 255, 0.8) 18% 19%, transparent 19% 100%),
+    linear-gradient(180deg, transparent 0 28%, rgba(22, 119, 255, 0.7) 28% 29%, transparent 29% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 44%, 70% 44%, 58% 34%, 30% 34%, 22% 46%, 0 46%);
+  filter: drop-shadow(0 0 18px rgba(22, 119, 255, 0.22));
+}
+
+.circuit-corner-left {
+  transform: rotate(180deg);
+}
+
+.circuit-corner-right {
+  clip-path: polygon(18% 56%, 48% 56%, 60% 66%, 86% 66%, 100% 52%, 100% 100%, 0 100%, 0 72%);
+}
+
+.hero-tux-stage {
+  animation: tuxFloat 6s ease-in-out infinite;
+}
+
+.tech-service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(22, 119, 255, 0.24), transparent 34%),
+    radial-gradient(circle at 80% 18%, rgba(244, 194, 29, 0.08), transparent 7rem),
+    radial-gradient(rgba(255, 255, 255, 0.14) 0.55px, transparent 0.55px);
+  background-size: auto, auto, 4px 4px;
+  opacity: 0.36;
+  pointer-events: none;
 }
 
 .ambient-glow {
@@ -290,9 +328,20 @@ h3 {
   }
 }
 
+@keyframes tuxFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (max-width: 640px) {
   .tech-grid-background {
-    background-size: auto, 128px 128px, 128px 128px;
+    background-size: auto, auto, auto, 128px 128px, 128px 128px, 4px 4px;
   }
 
   .section-grid {
@@ -345,6 +394,7 @@ h3 {
   .reveal-scale,
   .navbar-load,
   .ambient-glow,
+  .hero-tux-stage,
   .tech-orbit,
   .tech-node,
   .tech-connection,

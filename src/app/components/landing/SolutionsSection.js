@@ -11,40 +11,40 @@ export default function SolutionsSection() {
       aria-labelledby="pillars-title"
     >
       <div className="mx-auto max-w-[1100px] px-5 sm:px-6">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <Reveal delay="0ms">
             <SectionLabel>{pillarsSection.label}</SectionLabel>
           </Reveal>
-          <Reveal as="h2" delay="80ms" id="pillars-title" className="text-4xl font-extrabold tracking-normal text-[#f2f4f6] sm:text-5xl">
+          <Reveal as="h2" delay="80ms" id="pillars-title" className="text-4xl font-extrabold tracking-normal text-[#f7f9fc] sm:text-5xl">
             {pillarsSection.title}
           </Reveal>
-          <Reveal as="p" delay="160ms" className="mt-5 text-base leading-7 text-[#8d969f]">
+          <Reveal as="p" delay="160ms" className="mt-5 text-base leading-7 text-[#aab5c1]">
             {pillarsSection.description}
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-2">
+        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
           {pillarsSection.items.map((pillar, index) => (
             <Reveal
               as="article"
               key={pillar.title}
-              delay={index === 0 ? "120ms" : "240ms"}
-              className="group relative min-h-[360px] overflow-hidden rounded-lg border border-white/10 bg-[#090b0d] p-7 transition duration-300 hover:-translate-y-[3px] hover:border-[#009fe3]/45 hover:bg-[#0d1013] sm:p-9"
+              delay={`${120 + index * 70}ms`}
+              className="tech-service-card group relative overflow-hidden rounded-lg border border-white/10 bg-[#090b0d] p-5 transition duration-300 hover:-translate-y-[3px] hover:border-[#1677ff]/55 hover:bg-[#0d1117] sm:p-6"
             >
-              <p className="absolute right-7 top-6 font-mono text-7xl font-bold text-white/[0.035]">
+              <p className="absolute right-4 top-4 font-mono text-5xl font-bold text-white/[0.035]">
                 {pillar.number}
               </p>
               <div className="relative">
-                <div className="mb-10 flex h-11 w-11 items-center justify-center rounded-md border border-[#006ea0]/45 bg-[#003c60]/25 text-[#009fe3] transition duration-300 group-hover:border-[#009fe3]/75 group-hover:text-[#65cfff]">
+                <div className="mb-7 flex h-12 w-12 items-center justify-center rounded-md border border-[#1677ff]/45 bg-[#031833]/70 text-[#2d8cff] transition duration-300 group-hover:border-[#58a6ff]/80 group-hover:text-[#f4c21d]">
                   <Icon name={pillar.icon} className="h-5 w-5" />
                 </div>
-                <h3 className="text-3xl font-extrabold text-[#f2f4f6]">{pillar.title}</h3>
-                <p className="mt-5 max-w-xl text-base leading-8 text-[#8d969f]">{pillar.description}</p>
-                <div className="mt-9 flex flex-wrap gap-2">
+                <h3 className="text-lg font-extrabold leading-6 text-[#f7f9fc]">{pillar.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[#9da8b4]">{pillar.description}</p>
+                <div className="mt-6 flex flex-wrap gap-2">
                   {pillar.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-md border border-white/[0.08] bg-[#101214] px-3 py-1.5 text-xs font-medium text-[#8d969f]"
+                      className="rounded-md border border-white/[0.08] bg-black/30 px-2.5 py-1 text-[11px] font-medium text-[#9da8b4]"
                     >
                       {tag}
                     </span>

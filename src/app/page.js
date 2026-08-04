@@ -8,7 +8,7 @@ import SolutionsSection from "./components/landing/SolutionsSection";
 
 export default function Home() {
   return (
-    <div className="tech-grid-background min-h-screen bg-black text-[#f2f4f6]">
+    <div className="tech-grid-background min-h-screen bg-black text-[#f7f9fc]">
       <Navbar />
       <main>
         <HeroSection />

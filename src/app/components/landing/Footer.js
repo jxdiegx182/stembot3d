@@ -6,16 +6,16 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/[0.06]">
+    <footer className="border-t border-[#1677ff]/15 bg-black/35">
       <Reveal className="mx-auto max-w-[1100px] px-5 py-10 text-center sm:px-6" variant="fade">
         <Image
           src={brandLogo.src}
           alt={brandLogo.alt}
           width={brandLogo.width}
           height={brandLogo.height}
-          className="mx-auto h-11 w-auto [filter:drop-shadow(0_0_22px_rgba(0,159,227,0.28))]"
+          className="mx-auto h-11 w-auto [filter:drop-shadow(0_0_22px_rgba(22,119,255,0.28))]"
         />
-        <p className="mt-5 text-sm font-bold uppercase tracking-[0.18em] text-[#f2f4f6]">
+        <p className="mt-5 text-sm font-bold uppercase tracking-[0.18em] text-[#f7f9fc]">
           {footerContent.line}
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-5">
@@ -25,7 +25,7 @@ export default function Footer() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-[#8d969f] transition-colors hover:text-[#009fe3] focus:outline-none focus:ring-2 focus:ring-[#009fe3]"
+              className="text-sm font-medium text-[#aab5c1] transition-colors hover:text-[#f4c21d] focus:outline-none focus:ring-2 focus:ring-[#2d8cff]"
             >
               {link.label}
             </a>

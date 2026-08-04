@@ -19,10 +19,10 @@ export default function TechEcosystem() {
       <div className="tech-glow absolute inset-0" aria-hidden="true" />
 
       <div className="relative z-10 max-w-sm">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#009fe3]">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#2d8cff]">
           {ecosystem.title}
         </p>
-        <p className="mt-3 text-sm leading-6 text-[#8d969f]">
+        <p className="mt-3 text-sm leading-6 text-[#aab5c1]">
           {ecosystem.description}
         </p>
       </div>
@@ -31,13 +31,13 @@ export default function TechEcosystem() {
         {ecosystem.tags.map((tag, index) => (
           <span
             key={tag}
-            className={`absolute z-20 hidden rounded-md border border-white/[0.08] bg-black/45 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#8d969f] backdrop-blur sm:block ${tagPositions[index]}`}
+            className={`absolute z-20 hidden rounded-md border border-white/[0.08] bg-black/45 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#aab5c1] backdrop-blur sm:block ${tagPositions[index]}`}
           >
             {tag}
           </span>
         ))}
 
-        <div className="tech-core absolute left-1/2 top-1/2 h-[68%] w-[68%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#009fe3]/25" aria-hidden="true" />
+        <div className="tech-core absolute left-1/2 top-1/2 h-[68%] w-[68%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#1677ff]/25" aria-hidden="true" />
 
         <svg
           className="absolute inset-0 h-full w-full"
@@ -47,8 +47,8 @@ export default function TechEcosystem() {
         >
           <defs>
             <radialGradient id="coreGradient" cx="50%" cy="46%" r="58%">
-              <stop offset="0%" stopColor="#009fe3" stopOpacity="0.3" />
-              <stop offset="48%" stopColor="#003c60" stopOpacity="0.18" />
+              <stop offset="0%" stopColor="#1677ff" stopOpacity="0.3" />
+              <stop offset="48%" stopColor="#031833" stopOpacity="0.18" />
               <stop offset="100%" stopColor="#000000" stopOpacity="0" />
             </radialGradient>
           </defs>
@@ -56,16 +56,16 @@ export default function TechEcosystem() {
           <circle cx="260" cy="260" r="148" fill="url(#coreGradient)" />
 
           <g className="tech-orbit tech-orbit-a">
-            <ellipse cx="260" cy="260" rx="190" ry="74" stroke="#009fe3" strokeOpacity="0.32" />
-            <ellipse cx="260" cy="260" rx="116" ry="196" stroke="#009fe3" strokeOpacity="0.18" />
+            <ellipse cx="260" cy="260" rx="190" ry="74" stroke="#1677ff" strokeOpacity="0.32" />
+            <ellipse cx="260" cy="260" rx="116" ry="196" stroke="#1677ff" strokeOpacity="0.18" />
           </g>
           <g className="tech-orbit tech-orbit-b">
-            <ellipse cx="260" cy="260" rx="210" ry="92" stroke="#f2f4f6" strokeOpacity="0.08" transform="rotate(34 260 260)" />
-            <ellipse cx="260" cy="260" rx="82" ry="214" stroke="#009fe3" strokeOpacity="0.2" transform="rotate(34 260 260)" />
+            <ellipse cx="260" cy="260" rx="210" ry="92" stroke="#f7f9fc" strokeOpacity="0.08" transform="rotate(34 260 260)" />
+            <ellipse cx="260" cy="260" rx="82" ry="214" stroke="#1677ff" strokeOpacity="0.2" transform="rotate(34 260 260)" />
           </g>
 
-          <path className="tech-connection" d="M166 214L228 168L318 190L370 264L332 342L236 362L164 304Z" stroke="#009fe3" strokeOpacity="0.5" strokeDasharray="7 12" />
-          <path className="tech-connection tech-connection-alt" d="M228 168L260 260L370 264M260 260L236 362M260 260L166 214" stroke="#f2f4f6" strokeOpacity="0.14" strokeDasharray="5 14" />
+          <path className="tech-connection" d="M166 214L228 168L318 190L370 264L332 342L236 362L164 304Z" stroke="#1677ff" strokeOpacity="0.5" strokeDasharray="7 12" />
+          <path className="tech-connection tech-connection-alt" d="M228 168L260 260L370 264M260 260L236 362M260 260L166 214" stroke="#f7f9fc" strokeOpacity="0.14" strokeDasharray="5 14" />
 
           {[
             [166, 214, "0ms"],
@@ -84,17 +84,17 @@ export default function TechEcosystem() {
               cx={cx}
               cy={cy}
               r={cx === 260 && cy === 260 ? 6 : 4}
-              fill="#009fe3"
+              fill="#1677ff"
             />
           ))}
 
           <g opacity="0.35">
-            <circle cx="206" cy="242" r="1.8" fill="#f2f4f6" />
-            <circle cx="292" cy="222" r="1.8" fill="#f2f4f6" />
-            <circle cx="306" cy="306" r="1.8" fill="#f2f4f6" />
-            <circle cx="222" cy="314" r="1.8" fill="#f2f4f6" />
-            <circle cx="260" cy="198" r="1.8" fill="#f2f4f6" />
-            <circle cx="260" cy="322" r="1.8" fill="#f2f4f6" />
+            <circle cx="206" cy="242" r="1.8" fill="#f7f9fc" />
+            <circle cx="292" cy="222" r="1.8" fill="#f7f9fc" />
+            <circle cx="306" cy="306" r="1.8" fill="#f7f9fc" />
+            <circle cx="222" cy="314" r="1.8" fill="#f7f9fc" />
+            <circle cx="260" cy="198" r="1.8" fill="#f7f9fc" />
+            <circle cx="260" cy="322" r="1.8" fill="#f7f9fc" />
           </g>
         </svg>
 
@@ -102,7 +102,7 @@ export default function TechEcosystem() {
           {ecosystem.tags.slice(0, 4).map((tag) => (
             <span
               key={tag}
-              className="rounded-md border border-white/[0.08] bg-black/45 px-2 py-1.5 text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-[#8d969f]"
+              className="rounded-md border border-white/[0.08] bg-black/45 px-2 py-1.5 text-center text-[10px] font-semibold uppercase tracking-[0.12em] text-[#aab5c1]"
             >
               {tag}
             </span>
