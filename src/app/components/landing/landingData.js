@@ -21,8 +21,8 @@ export const whatsappUrl =
   "https://wa.me/593993311974?text=Hola%20Stem%20Tech%2C%20quiero%20hablar%20sobre%20una%20idea%20tecnol%C3%B3gica.";
 
 export const socialLinks = [
-  { label: "Instagram", href: "https://www.instagram.com/stembot3d/" },
-  { label: "TikTok", href: "https://www.tiktok.com/@stem_bot_3d" },
+  { label: "Instagram", href: "https://www.instagram.com/stem.tech_" },
+  { label: "TikTok", href: "https://www.tiktok.com/@stem.tech_" },
   { label: "WhatsApp", href: whatsappUrl },
 ];
 
